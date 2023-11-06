@@ -1,0 +1,209 @@
+* {
+    text-decoration: none;
+    /* Remove default text decoration */
+    list-style: none;
+    /* Remove default list style */
+    box-sizing: border-box;
+    /* Add border-box to all elements */
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* Remove default padding */
+}
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    color: #222121;
+    background-color: hsl(198, 69%, 80%);
+
+}
+
+.nav-link {
+    text-align: center;
+    /* Center-align the text within the navigation links */
+    padding: 1rem;
+}
+
+
+.img-a{ /* รูปมหาวิทยาลัยพะเยา */
+    width: 500px;
+    box-shadow: #333 0px 0px 10px;
+}
+
+.img { /* รูปโปรไฟล์ */
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+
+}
+
+.p1 { /* ขนาดข้อความชื่อ */
+    font-size: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.p1:hover {
+    color: rgb(228, 218, 226);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s;
+
+}
+
+.p2 { /* ขนาดข้อความใน skill */
+    padding-top: 50px;
+}
+
+.navbar-brand{ /* ขนาดชื่อเว็บ */
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.content { /* ขนาดข้อความชื่อ */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.main-contain { /* ขนาดข้อความหลัก */
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.container { /* ขนาดข้อความส่วน navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: hsl(198, 69%, 80%);
+    /* Add a background color if needed */
+    z-index: 100;
+    /* Adjust the z-index to control its stacking order */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow if desired */
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a:hover { /* สีข้อความ navbar */
+    text-decoration: underline;
+}
+
+.container header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    /* Add a border if desired */
+}
+
+
+
+.containers { /* ส่วน Contact */
+    border-color: black;
+    border-style: solid;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    background-color: rgb(246, 238, 226);
+    border-radius: 15px;
+
+}
+
+.contact {  /* ขนาดข้อความ Contact */
+    font-size: 100px;
+}
+
+.col:hover {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.facebook:hover {
+    color: rgb(0, 0, 225);
+    transition: 0.3s ease-in-out;
+}
+
+.containert {   /* ขนาดข้อความตาราง */
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(245, 228, 203);
+    font-size: 18px;
+}
+
+/* ลบจุดหน้า li */
+.skill ul li {
+    list-style: none;
+}
+
+.experience ul li { /* ลบจุดหน้า li */
+    list-style: none;
+}
+
+.skill h2 {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    /* Remove default margins for the paragraph */
+}
+
+.container-img { /* ขนาดรูป */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+    margin-top: 50px;
+    margin: 50px;
+    padding: 25px;
+    padding-right: 25px;
+}
+
+
+img { /* ขนาดรูป */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
