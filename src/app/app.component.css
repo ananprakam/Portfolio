@@ -23,21 +23,21 @@ body {
 }
 
 /* Style the navbar */
+/* Style the navbar */
 .navbar {
-    position: fixed;
+    position: fixed; /* ทำให้ Navbar อยู่บนสุดเสมอ */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 60px;
+    width: 100%; /* ความกว้างเต็มหน้าเว็บ */
+    height: 60px; /* ความสูงของ Navbar 60px */
     background-color: #333;
-    display: flex;
-    /* เปลี่ยนให้เป็น Flexbox */
-    justify-content: center;
-    /* จัดให้ Navbar อยู่ตรงกลางตามแนวนอน */
-    align-items: center;
-    /* จัดให้ Navbar อยู่ตรงกลางตามแนวดิ่ง */
-    
+    display: flex; /* เปลี่ยนให้เป็น Flexbox */
+    justify-content: center; /* จัดให้ Navbar อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดให้ Navbar อยู่ตรงกลางตามแนวดิ่ง */
+    z-index: 999; /* ค่า z-index สูงสุด เพื่อให้ Navbar อยู่บนสุด */
+    overflow: hidden;
 }
+
 
 /* Style the list inside the navbar */
 .navbar ul {
