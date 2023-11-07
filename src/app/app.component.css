@@ -18,7 +18,8 @@ body {
     font-family: 'Fredoka', sans-serif;
     font-size: 25px;
     color: #222121;
-    background-color: hsl(198, 69%, 80%);
+    background-color: rgb(152, 162, 156);
+    /*background-color: hsl(198, 69%, 80%);*/
 }
 
 
