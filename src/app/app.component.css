@@ -105,9 +105,9 @@ body {
 }
 
 .p1 {
-    /* ขนาดข้อความชื่อ */
+    /* ขนาดข้อความชื่อ Portfolio*/
     font-size: 60px;
-    padding-top: 80px;
+    padding-top: 50px;
     margin-top: 50px;
     margin-bottom: 25px;
     margin-left: 100px;
@@ -118,7 +118,7 @@ body {
 .p1:hover {
     color: rgb(228, 218, 226);
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1);
     transition: transform 0.3s;
 
 }
