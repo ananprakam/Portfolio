@@ -19,10 +19,9 @@ body {
     font-size: 25px;
     color: #222121;
     background-color: hsl(198, 69%, 80%);
-
 }
 
-/* Style the navbar */
+
 /* Style the navbar */
 .navbar {
     position: fixed; /* ทำให้ Navbar อยู่บนสุดเสมอ */
@@ -150,8 +149,6 @@ body {
 
 }
 
-
-
 a:hover {
     /* สีข้อความ navbar */
     text-decoration: underline;
@@ -165,7 +162,6 @@ a:hover {
     border-bottom: 1px solid #ccc;
     /* Add a border if desired */
 }
-
 
 
 .containers {
