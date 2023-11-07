@@ -22,25 +22,79 @@ body {
 
 }
 
-.nav-link {
+/* Style the navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    /* เปลี่ยนให้เป็น Flexbox */
+    justify-content: center;
+    /* จัดให้ Navbar อยู่ตรงกลางตามแนวนอน */
+    align-items: center;
+    /* จัดให้ Navbar อยู่ตรงกลางตามแนวดิ่ง */
+    
+}
+
+/* Style the list inside the navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Style each list item */
+.navbar li {
+    float: left;
+}
+
+/* Style the links inside the list items */
+.navbar a {
+    display: block;
+    color: white;
     text-align: center;
-    /* Center-align the text within the navigation links */
-    padding: 1rem;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* เปลี่ยนสีเมื่อ hover */
+.navbar a:hover {
+    background-color: #ddd;
+    /* สีพื้นหลังเมื่อ hover */
+    color: black;
+    /* สีตัวอักษรเมื่อ hover */
+    border-radius: 25px;
+    height: 50px;
+}
+
+/* Style the active link (the link of the current page) */
+.navbar a.active {
+    background-color: #4CAF50;
+    /* สีพื้นหลังของเมนูที่เปิดอยู่ */
+    color: white;
+    /* สีตัวอักษรของเมนูที่เปิดอยู่ */
 }
 
 
-.img-a{ /* รูปมหาวิทยาลัยพะเยา */
+.img-a {
+    /* รูปมหาวิทยาลัยพะเยา */
     width: 500px;
     box-shadow: #333 0px 0px 10px;
 }
 
-.img { /* รูปโปรไฟล์ */
+.img {
+    /* รูปโปรไฟล์ */
     width: 200px;
     height: 200px;
     border-radius: 10%;
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .img:hover {
@@ -50,9 +104,11 @@ body {
 
 }
 
-.p1 { /* ขนาดข้อความชื่อ */
+.p1 {
+    /* ขนาดข้อความชื่อ */
     font-size: 60px;
-    margin-top: 25px;
+    padding-top: 80px;
+    margin-top: 50px;
     margin-bottom: 25px;
     margin-left: 100px;
     margin-right: 100px;
@@ -67,16 +123,19 @@ body {
 
 }
 
-.p2 { /* ขนาดข้อความใน skill */
+.p2 {
+    /* ขนาดข้อความใน skill */
     padding-top: 50px;
 }
 
-.navbar-brand{ /* ขนาดชื่อเว็บ */
+.navbar-brand {
+    /* ขนาดชื่อเว็บ */
     font-size: 40px;
     text-decoration: underline;
 }
 
-.content { /* ขนาดข้อความชื่อ */
+.content {
+    /* ขนาดข้อความชื่อ */
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 50px;
@@ -84,32 +143,17 @@ body {
     font-size: 20px;
 }
 
-.main-contain { /* ขนาดข้อความหลัก */
+.main-contain {
+    /* ขนาดข้อความหลัก */
     text-align: center;
     margin-top: 50px;
 
 }
 
-.container { /* ขนาดข้อความส่วน navbar */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: hsl(198, 69%, 80%);
-    /* Add a background color if needed */
-    z-index: 100;
-    /* Adjust the z-index to control its stacking order */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add shadow if desired */
-    font-family: 'Fredoka', sans-serif;
-    font-size: 25px;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
 
-}
 
-a:hover { /* สีข้อความ navbar */
+a:hover {
+    /* สีข้อความ navbar */
     text-decoration: underline;
 }
 
@@ -124,7 +168,8 @@ a:hover { /* สีข้อความ navbar */
 
 
 
-.containers { /* ส่วน Contact */
+.containers {
+    /* ส่วน Contact */
     border-color: black;
     border-style: solid;
     margin-left: 100px;
@@ -137,7 +182,8 @@ a:hover { /* สีข้อความ navbar */
 
 }
 
-.contact {  /* ขนาดข้อความ Contact */
+.contact {
+    /* ขนาดข้อความ Contact */
     font-size: 100px;
 }
 
@@ -152,7 +198,8 @@ a:hover { /* สีข้อความ navbar */
     transition: 0.3s ease-in-out;
 }
 
-.containert {   /* ขนาดข้อความตาราง */
+.containert {
+    /* ขนาดข้อความตาราง */
     border-color: black;
     border-style: solid;
     border-radius: 15px;
@@ -169,7 +216,8 @@ a:hover { /* สีข้อความ navbar */
     list-style: none;
 }
 
-.experience ul li { /* ลบจุดหน้า li */
+.experience ul li {
+    /* ลบจุดหน้า li */
     list-style: none;
 }
 
@@ -189,11 +237,12 @@ footer p {
     /* Remove default margins for the paragraph */
 }
 
-.container-img { /* ขนาดรูป */
+.container-img {
+    /* ขนาดรูป */
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     margin-top: 50px;
     margin: 50px;
     padding: 25px;
@@ -201,9 +250,8 @@ footer p {
 }
 
 
-img { /* ขนาดรูป */
+img {
+    /* ขนาดรูป */
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
